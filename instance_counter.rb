@@ -1,7 +1,7 @@
 module InstanceCounter
   def self.included(receiver)
     receiver.extend = ClassMethods
-    receiver.send :incluede , InstanceMethods
+    receiver.send :include , InstanceMethods
   end
 
   module ClassMethods
